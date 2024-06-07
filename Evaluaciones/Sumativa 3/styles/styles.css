@@ -10,16 +10,36 @@ body {
 }
 
 .bienvenido{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(166, 219, 250, 0.575);
+    border-radius: 40px;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Oswald';
     font-style: italic;
 }
 
+.imges{
+    background-color: rgb(83, 83, 83);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:20%;
+}
+
 .bienvenido h2{
     font-size: 70px;
+}
 
+.second-ttl{
+    background-color: darkcyan;
+}
+
+.second-ttl h3{
+    font-family: 'montserrat';
+    text-align: center;
+    color:  white;
 }
 
 
@@ -92,7 +112,7 @@ body {
 }
 
 .title {
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: rgba(116, 116, 116, 0.507);
     color: white;
     display: grid;
@@ -179,7 +199,7 @@ td {
     width: 100px;
     height: 100px;
     font-size: 20px;
-    padding-top: 2%;
+    padding-top: 1%;
     text-align: center;
     text-decoration: none;
 }
@@ -282,4 +302,3 @@ td {
         padding: 5px;
     }
 }
-

@@ -33,7 +33,7 @@
           <button onclick="conectar()">Ingresar</button>
         </div>
         <button type="button" id="disconnect" onclick="desconectar()" style="display: none;"> <img src="/Evaluaciones/Sumativa 3/assets/off-svgrepo-com.svg" alt="desconectar" width="20" align="center"></button>
-        <button type="button" id="btn-carrito" style="display: none;"> <a href="#contact"> <img src="/Evaluaciones/Sumativa 3/assets/cart-2-svgrepo-com.svg" alt="carrito" width="20"></a></button>
+        <button type="button" id="btn-carrito" style="display: none;"> <a href="#carrito"> <img src="/Evaluaciones/Sumativa 3/assets/cart-2-svgrepo-com.svg" alt="carrito" width="20"></a></button>
         <button> <a href="#contact">Contacto</a></button>
         <button> <a href="#about">Acerca de</a></button>
       </div>
@@ -45,12 +45,20 @@
 
     <h1 id="nickname-user"> Bienvenido nickname</h1>
 
-
     <div class="bienvenido">
       <h2>Ingresa y solicita la gran cantidad de juegos que tenemos a tu disposicion para utilizar</h2>
+      
+      <div class="imges">
+        <img src="/Evaluaciones/Sumativa 3/assets/group.jpg" alt="" width="20%">
+        <img src="/Evaluaciones/Sumativa 3/assets/unocards.jpg" alt="" width="10%">
+        <img src="/Evaluaciones/Sumativa 3/assets/domino.jpg" alt="" width="20%">
+      </div>
     </div>
 
-
+    <div class="second-ttl">
+      <h3>Y vive una nueva experiencia</h3>
+      <img src="/Evaluaciones/Sumativa 3/assets/role.jpg" alt="" width="50%">
+    </div>
 
     <div class="title">
       <h1>En inacap-ludi te presentamos las siguientes opciones de prestamo: </h1>
@@ -64,13 +72,11 @@
           <tr style="text-align: center;">
             <th>#</th>
             <th>Imagen</th>
-            <th>Codigo</th>
             <th>Categoria</th>
             <th>Nombre</th>
             <th>Ubicacion</th>
-            <th class="desc">Descripcion</th>
-            <th>Disponibilidad</th>
-            <th>Tiempo</th>
+            <th>Descripcion</th>
+            <th id="del-add">Stock</th>
             <th class="añadirEliminar"></th>
           </tr>
         </thead>

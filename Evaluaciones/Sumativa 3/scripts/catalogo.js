@@ -209,6 +209,8 @@ let logueado = false
 
 function conectar() {
     let usuario = document.getElementById('username').value
+    let del_buttons = document.getElementById('del-add')
+    del_buttons.value = 'Añadir/eliminar'
 
     if (usuario == '') {
         window.alert('No se puede ingresar un nombre vacio')
@@ -221,6 +223,7 @@ function conectar() {
         document.getElementById('btn-carrito').style.display = 'block'
         document.getElementById('carrito').hidden = false
         document.getElementById('sesion').innerHTML = ''
+        document.getElementById('del-add').innerHTML = 'Stock'
         logueado = true
         mostrarCatalogo()
     }
@@ -243,6 +246,7 @@ function desconectar() {
 
 function mostrarCatalogo() {
     let tablaCatalogo = document.getElementById("catalogo");
+
     tablaCatalogo.innerHTML = '';
 
     catalogo.forEach(function (item, index) {
@@ -250,13 +254,11 @@ function mostrarCatalogo() {
             tablaCatalogo.innerHTML += `<tr>
                     <td>${index + 1}</td>
                     <td><img src="${item.imagen}" width="150"></td>
-                    <td>${item.codigo}</td>
                     <td>${item.categoria}</td>
                     <td>${item.nombre}</td>
                     <td>${item.ubicacion}</td>
                     <td>${item.descripcion}</td>
                     <td align="center">${item.disponibilidad}</td>
-                    <td align="center">${item.tiempo}</td>
                     <td align="center">
                         <button type="button" class="añadir" onclick="añadir(${index}, false)">+<i class="fas fa-pen"></i></button>
                         <button type="button" class="menos" onclick="añadir(${index}, true)">-<i class="fas fa-pen"></i></button>
@@ -267,13 +269,11 @@ function mostrarCatalogo() {
             tablaCatalogo.innerHTML += `<tr>
                     <td>${index + 1}</td>
                     <td><img src="${item.imagen}" width="150"></td>
-                    <td>${item.codigo}</td>
                     <td>${item.categoria}</td>
                     <td>${item.nombre}</td>
                     <td>${item.ubicacion}</td>
                     <td>${item.descripcion}</td>
                     <td align="center">${item.disponibilidad}</td>
-                    <td align="center">${item.tiempo}</td>
                     <td align="center">
                     </td>
                 </tr>`
