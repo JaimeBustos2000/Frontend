@@ -28,8 +28,24 @@ body {
     align-items: center;
     flex-direction: row;
     gap:20%;
+    ;
 }
 
+.imges img:hover{
+    transform: scale(1.6);
+    ;
+    border: 2px solid WHITE;
+    animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .bienvenido h2{
     font-size: 70px;
 }
@@ -63,6 +79,11 @@ body {
     border: 1px solid white;
     border-style: groove;
     border-radius: 10px;
+}
+
+#role:hover{
+    background-color: rgba(255, 255, 255, 0.904);
+    transform: scale(1.3);
 }
 
 
