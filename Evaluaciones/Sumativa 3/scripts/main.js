@@ -1,3 +1,4 @@
+// Catalogo de productos
 let catalogo = [
     {
         codigo: 'P0001',
@@ -204,9 +205,11 @@ let catalogo_original = [
     },
 ];
 
+// variables globales
 let carritoProductos = []
 let logueado = false
 
+// funcion para conectar al usuario
 function conectar() {
     let usuario = document.getElementById('username').value
     let del_buttons = document.getElementById('del-add')
@@ -229,6 +232,7 @@ function conectar() {
     }
 }
 
+// Función para desconectar al usuario
 function desconectar() {
     document.getElementById('nickname-user').innerHTML = 'Bienvenido nickname'
     document.getElementById('disconnect').style.display = 'none'
@@ -244,6 +248,7 @@ function desconectar() {
     mostrarCatalogo()
 }
 
+// Función para mostrar el catálogo
 function mostrarCatalogo() {
     let tablaCatalogo = document.getElementById("catalogo");
 
@@ -281,7 +286,7 @@ function mostrarCatalogo() {
     });
 }
 
-
+// funcion para añadir productos al carrito
 function añadir(indice, eliminar) {
 
     let producto = catalogo[indice];
@@ -340,10 +345,11 @@ function añadir(indice, eliminar) {
     })
     let tablaCatalogo = document.getElementById("catalogo");
     tablaCatalogo.innerHTML = '';
-    // Actualizar el catálogo
+
     mostrarCatalogo();
 }
 
+// funcion para eliminar productos del carrito
 function deletes(index) {
     let carro = document.getElementById('carrodecompra')
     let productoEliminado = carritoProductos[index];
@@ -367,6 +373,6 @@ function deletes(index) {
     })
     let tablaCatalogo = document.getElementById("catalogo");
     tablaCatalogo.innerHTML = '';
-    // Actualizar el catálogo
+
     mostrarCatalogo();
 }
