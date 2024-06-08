@@ -285,7 +285,6 @@ function mostrarCatalogo() {
 function añadir(indice, eliminar) {
 
     let producto = catalogo[indice];
-    let producto_original = catalogo_original[indice];
     let carro = document.getElementById('carrodecompra')
 
     let productoEnCarrito = carritoProductos.find(item => item.codigo === producto.codigo);
