@@ -94,7 +94,7 @@ const Nav = () => {
                             <img src="/off-svgrepo-com.svg" alt="Desconectar" width="20" />
                         </button>
                         <button type="button" id="btn-carrito" className='btn-cart' >
-                            <Link href="#carrito">
+                            <Link href="/buy">
                                 <img
                                     src="/cart-2-svgrepo-com.svg"
                                     alt="Carrito"
@@ -112,17 +112,6 @@ const Nav = () => {
                         {isAuthenticated && (
                             <Link href="/selectionform">
                                 <button>Administrador</button>
-                            </Link>
-                        )}
-                        {!isAuthenticated && (
-                            <Link href="/">
-                            </Link>
-                        )}
-                    </div>
-                    <div>
-                        {isAuthenticated && (
-                            <Link href="/buy">
-                                <button>Compra</button>
                             </Link>
                         )}
                         {!isAuthenticated && (
