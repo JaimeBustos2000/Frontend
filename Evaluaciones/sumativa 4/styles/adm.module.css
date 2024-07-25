@@ -1,0 +1,62 @@
+
+.container {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    background-color: rgb(39, 39, 39);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.productTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.productTable th,
+.productTable td {
+    border: 1px solid #444444;
+    padding: 10px;
+    text-align: left;
+}
+
+.productTable th {
+    background-color: #525252;
+    font-weight: bold;
+}
+
+.productImage {
+    width: 100px;
+}
+
+.buttons {
+    margin-top: 4px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons:hover {
+    background-color: #005bb5;
+}
+
+.tbody tr:hover {
+    background-color: #8b8b8b;
+
+}
+
+.tbody tr td{
+    text-align: center;
+}   

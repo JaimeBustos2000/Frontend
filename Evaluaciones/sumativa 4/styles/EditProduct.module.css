@@ -1,0 +1,79 @@
+.container {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    max-width: 100%;
+    color: white;
+    background-color: rgb(22, 22, 22);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edith1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+
+}
+
+.labels{
+    display: block;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+
+.inputs[type="number"] {
+    color: black;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputs[type="text"]{
+    flex-grow: 1;
+    width: 100%;
+    color: black;
+}
+
+.desc {
+    display: grid;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.desc textarea{
+    height: 25vh;
+    color: black;
+}
+
+.desc input[type="text"] {
+    height: 100px;
+    resize: vertical;
+}
+
+.backButton{
+    background-color: #0070f3;
+    padding: 5px;
+    border: 2px solid #25476e;
+    margin: 5px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.backButton:hover{
+    background-color: #336299;;
+}

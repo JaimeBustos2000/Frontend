@@ -1,0 +1,65 @@
+.gendiv{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-left: -10%;
+    margin-right: -10%;
+}
+
+.gendiv img {
+    animation: fadeOpacity 3s linear infinite;
+    width: 100%;
+    opacity: 0.75;
+}
+
+@keyframes fadeOpacity {
+    0% {
+        opacity: 0.65;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.65;
+    }
+}
+
+.Bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+.message img{
+    width: 50%;
+    height: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.optext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-Color: #65DF619F;
+    text-align: "center";
+    border-radius: 50px
+}

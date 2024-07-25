@@ -1,0 +1,56 @@
+.general{
+    display: grid;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    margin-top: 10vh;
+    padding: 20px;
+    border-radius: 8px
+}
+
+.general h1{
+    font-family:"Segoe UI , monospace";
+    font-size: 30px;
+    text-align: center;
+}
+
+.labels{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.labels h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.inputs{
+    width: 100%;
+    padding: 8px; 
+    margin-top: 5px;
+    color: black;  
+}
+
+.updatebtn{
+    width: 100%;
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    color: white; 
+    background-color: #0070f3; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+    margin-top: 10px
+}
+
+.updatebtn:hover{
+    background-color: #0053b3
+}

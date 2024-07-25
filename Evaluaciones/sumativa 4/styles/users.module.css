@@ -1,0 +1,70 @@
+.users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.users h1{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.userbox{
+    color: white;
+    background-color:rgb(0, 0, 0);
+    margin-top: 100px;
+    padding-top: 10px;
+    border-radius: 10px
+}
+
+.userbox h1{
+    text-align: center;
+}
+
+
+.ths{
+    border-bottom: "2px solid black"; 
+    padding: 8px;
+    text-align: "left";
+}
+
+.userbox table thead tr{
+    border: 1px solid white;
+    text-align: center;
+    background-color: #5f5f5f;
+}
+
+.userbox table thead tr th{
+    border: 1px solid white;
+}
+
+
+.tds{
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd
+}
+
+.tbody tr:hover{
+    background-color: #9c9c9c;
+    color : black;
+}
+
+
+.btnedt{
+    padding: 5px 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: 'pointer'
+}
+
+.btnedt:hover{
+    background-color: #0053b3
+}
+

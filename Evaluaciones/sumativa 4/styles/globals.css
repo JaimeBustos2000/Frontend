@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* General Styles */
+body {
+  margin: 0;
+  background: url('https://images.pexels.com/photos/5477776/pexels-photo-5477776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  /* Fuente genérica para todo el documento */
+}
+
+.bienvenido {
+  background-color: rgba(129, 45, 45, 0.603);
+  border-radius: 60px;
+  border: 1px solid black;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Oswald';
+  font-style: italic;
+}
+
+.imges {
+  background-color: rgb(40, 94, 73);
+  border-radius: 60px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20%;
+  ;
+}
+
+.imges img:hover {
+  transform: scale(1.6);
+  ;
+  border: 2px solid WHITE;
+}
+
+.bienvenido h2 {
+  font-size: 70px;
+}
+
+
+.navi {
+  background-color: rgba(128, 128, 128, 0.24);
+  color: black;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.inacap-ludi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-align: center;
+  color: rgba(231, 37, 37, 0.897);
+  font-weight: bold;
+}
+
+.ludi {
+  font-size: 50px;
+  color: black;
+  font-family: 'Segoe UI';
+  font-style: italic;
+}
+
+.g {
+  font-size: 50px;
+  color: white;
+}
+
+.inacap-info {
+  list-style-type: none;
+}
+
+.inacap {
+  width: 150px;
+  height: auto;
+  background-color: white;
+}
+
+.menos {
+  background-color: rgb(230, 72, 72);
+}
+
+.menos:hover {
+  background-color: rgb(177, 57, 57);
+}
+
+.get-user-info {
+  padding-top: 3%;
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.get-user-info label,
+.get-user-info input,
+.get-user-info button {
+  margin-left: 5px;
+}
+
+.get-user-info button {
+  background-color: rgb(120, 190, 231);
+  border: black 1px solid;
+}
+
+.get-user-info button a {
+  text-decoration: none;
+  color: black;
+}
+
+.get-user-info button:hover {
+  background-color: rgba(120, 190, 231, 0.452);
+}
+
+.contact-about {
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-about button {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.title {
+  margin-top: 5%;
+  background-color: rgba(116, 116, 116, 0.507);
+  color: white;
+  display: grid;
+  width: 100%;
+  text-align: center;
+}
+
+.title h1 {
+  font-family: 'prompt';
+  font-size: 30px;
+
+}
+
+.title p {
+  font-family: 'prompt';
+  font-size: 20px;
+}
+
+.btn-logout{
+  background-color: rgb(230, 72, 72);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+
+}
+
+
+.btn-logout img{
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-cart{
+  background-color: rgb(120, 190, 231);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+
+}
+
+.btn-cart img{
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#catalogo {
+  font-family: 'Roboto';
+}
+
+#disconnect {
+  background-color: rgb(230, 72, 72);
+}
+
+#disconnect:hover {
+  background-color: rgb(177, 57, 57);
+}
+
+#about {
+  background-color: rgba(94, 48, 11, 0.726);
+  color: black;
+}
+
+#about h2 {
+  margin: 20px;
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  text-align: center;
+}
+
+#about p {
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  color: white;
+}
+
+
+
+@media (min-width: 768px) {
+  .table-container {
+    flex-direction: row;
+  }
+
+  .carrito {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .get-user-info {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  .navi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-container {
+    flex-direction: column;
+  }
+
+  .carrito {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .get-user-info {
+    justify-content: center;
+  }
+
+  .table th,
+  .table td {
+    padding: 5px;
+  }
+}
+
+
