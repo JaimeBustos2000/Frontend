@@ -18,7 +18,6 @@ export default function Home({ }) {
         <h1>En inacap-ludi te presentamos las siguientes opciones de prestamo: </h1>
         <p className="sesion">- INICIA SESION YA Y OBTEN  -</p>
       </div>
-      
       <ImageCarousel />
     </div>
   );

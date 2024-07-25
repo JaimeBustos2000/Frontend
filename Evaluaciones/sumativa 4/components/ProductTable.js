@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Style from '../styles/ProductTable.module.css';
 import { Inter } from "next/font/google";
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
 
 const ProductCart = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+
+    const router = useRouter();
 
     useEffect(() => {
         fetchProducts();
@@ -20,6 +24,10 @@ const ProductCart = () => {
         } catch (error) {
             console.error('Error fetching products:', error);
         }
+    };
+
+    const handleClick = () => {
+        router.push('/buy');
     };
 
     const handleAddToCart = (product) => {
@@ -127,7 +135,7 @@ const ProductCart = () => {
                 </div>
 
                 <div className={Style.cartActions}>
-                    <button className={Style.button_delete} onClick={handleRemoveFromCart}>Solicitar</button>
+                    <button className={Style.button_delete} onClick={handleClick}>Solicitar</button>
                 </div>
             </div>
 

@@ -119,6 +119,17 @@ const Nav = () => {
                             </Link>
                         )}
                     </div>
+                    <div>
+                        {isAuthenticated && (
+                            <Link href="/buy">
+                                <button>Compra</button>
+                            </Link>
+                        )}
+                        {!isAuthenticated && (
+                            <Link href="/">
+                            </Link>
+                        )}
+                    </div>
                     <button>
                         <Link href="/about">Acerca de</Link>
                     </button>

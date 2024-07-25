@@ -67,11 +67,10 @@ body {
 
 
 .navi {
-  background-color: rgba(128, 128, 128, 0.24);
+  background-color: rgba(168, 168, 168, 0.541);
   color: black;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
 }
 
 .inacap-ludi {
@@ -101,9 +100,10 @@ body {
 }
 
 .inacap {
+  padding-top: 10px;
+  padding-left: 10px;
   width: 150px;
   height: auto;
-  background-color: white;
 }
 
 .menos {
